@@ -1,24 +1,31 @@
 /// <reference types="Cypress" />
-    describe("test for login functionality",() => {
-        function login(){
-            cy.get('#__PWS_ROOT__ > div.zI7.iyn.Hsu > div:nth-child(2) > div > div > div:nth-child(2) > div.Jea._he.b8T.gjz.zI7.iyn.Hsu > div.Jea.l7T.zI7.iyn.Hsu > div:nth-child(2) > button > div').click();
-            cy.get('#email').type("ch927796@gmail.com");
-            cy.get('#password').type("carlahotico");
-            cy.get('#__PWS_ROOT__ > div.zI7.iyn.Hsu > div:nth-child(2) > div > div > div:nth-child(2) > div.Jea.MIw.TpD.mQ8.sLG.zI7.iyn.Hsu > div.Jea.MIw.QLY.Rym.jzS.mQ8.ojN.p6V.prG.sLG.zI7.iyn.Hsu > div > div > div > div.Jea.jzS.mQ8.zI7.iyn.Hsu > div > div > div > div:nth-child(3) > form > div:nth-child(5) > button').click();
-    };            
+    describe("test for login functionality",() => {         
         beforeEach(()=>{
             cy.visit("https://ro.pinterest.com/");
-            login();
+            Cypress.on("uncaught:exception", (err, runnable) => {
+                // returning false here prevents Cypress from failing the test
+                return false;
+              });
+            Cypress.Cookies.defaults({
+                //saves cookies until browser is closed
+                whitelist: (cookie) => {
+                  return true;
+                },
+            });
         });   
-    
-
-    it("TM-QA08-279:Save picture+TM-QA08-272:Login",()=>{
-        Cypress.on("uncaught:exception", (err, runnable) => {
-            // returning false here prevents Cypress from
-            // failing the test
-            return false;
+        it("TM-QA08-272:Login", () => {
+            cy.get("body").then(($body) => {
+              if ($body.find('[data-test-id="simple-login-button"] > .RCK').length) {
+                //if the selected item is found in the body, continue actions
+                cy.get('[data-test-id="simple-login-button"] > .RCK').click();
+                cy.get("#email").type("ch927796@gmail.com");
+                cy.get("#password").type("carlahotico");
+                cy.get(".red").click();
+              }
+            });
         });
 
+    it("TM-QA08-279:Save picture",()=>{
         cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div > div.gridCentered > div > div > div:nth-child(1) > div:nth-child(1) > div > div > div > div > div.XiG.sLG.zI7.iyn.Hsu > div:nth-child(1) > a > div > div.zI7.iyn.Hsu > div > div > div > div > div > img').click();
         cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div.Closeup.Module.flex.flex-auto.justify-around.flex-column > div > div > div > div.m2F.zI7.iyn.Hsu > div > div > div > div > div > div > div:nth-child(2) > div > div.qiB > div > div > div > div.Pyg.zI7.iyn.Hsu > div > div > div > div > button.PinBetterSave__Button.PinBetterSave__Button--lego').click();
         cy.get('#HeaderContent > header > div > div > div.zI7.iyn.Hsu > div > div > div > div.Jea.gjz.zI7.iyn.Hsu > div:nth-child(4) > div > a > div > div > div > div > div.XiG.zI7.iyn.Hsu > img').click();

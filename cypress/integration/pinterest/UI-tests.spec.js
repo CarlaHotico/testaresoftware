@@ -34,22 +34,24 @@ describe("Pinterest automated tests", () => {
   });
   
   it('TM-QA08-286:Download photo',()=>{
-      cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div > div.gridCentered > div > div > div:nth-child(1) > div:nth-child(1) > div > div > div > div > div.XiG.sLG.zI7.iyn.Hsu > div:nth-child(1) > a > div > div.zI7.iyn.Hsu > div > div > div > div > div > img').click();
-      cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div.Closeup.Module.flex.flex-auto.justify-around.flex-column > div > div > div > div.m2F.zI7.iyn.Hsu > div > div > div > div > div > div > div:nth-child(2) > div > div.qiB > div > div > div > div.DUt.Jea.b8T.qJc.zI7.iyn.Hsu > div:nth-child(1) > div > div > div > button > div > div > svg').click();
-      cy.get(':nth-child(1) > .czT > [role="listitem"] > :nth-child(1) > .F6l').click();
+      cy.get('#HeaderContent > header > div > div > div.zI7.iyn.Hsu > div > div > div > div.Jea.gjz.zI7.iyn.Hsu > div:nth-child(4) > div > a > div > div > div > div > div.XiG.zI7.iyn.Hsu > img').click();
+      cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div:nth-child(3) > div > div.CP0.sLG.zI7.iyn.Hsu > div > div > div > div:nth-child(3) > div > a > div > div.Fje.Jea.hA-.wYR.zI7.iyn.Hsu > div > h3').click();
+      cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div.fma.zI7.iyn.Hsu > div.XiG.Zr3.zI7.iyn.Hsu > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div:nth-child(4) > div > div > div > div > div > div > div > div.XiG.sLG.zI7.iyn.Hsu > div:nth-child(1) > a > div > div.zI7.iyn.Hsu > div > div > div > div > div > img').click();
+      cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div.Closeup.Module.flex.flex-auto.justify-around.flex-column > div > div > div > div.m2F.zI7.iyn.Hsu > div > div > div > div > div > div > div:nth-child(2) > div > div.qiB > div > div > div > div.DUt.Jea.b8T.qJc.zI7.iyn.Hsu > div:nth-child(1) > div:nth-child(2) > div > div > button > div > div > svg > path').click();
+      cy.get(':nth-child(1) > .czT > [role="listitem"] > :nth-child(1) > .F6l > .C9q').click();
   });
   
   it('TM-QA08-287:Create board',()=>{
       cy.get('#HeaderContent > header > div > div > div.zI7.iyn.Hsu > div > div > div > div.Jea.gjz.zI7.iyn.Hsu > div:nth-child(4) > div > a > div > div > div > div > div.XiG.zI7.iyn.Hsu > img').click();
       cy.get('#__PWS_ROOT__ > div.App.AppBase > div.appContent > div > div > div > div.qiB > div > div > div > div.Jea.dSH.sxy.gjz.jx-.zI7.iyn.Hsu > div:nth-child(2) > div > div > button > div > svg').click();
       cy.get('[data-test-id="Create board"] > :nth-child(1) > .czT > .DUt').click();
-      cy.get('#boardEditName').type("new board3");
+      cy.get('#boardEditName').type("aaaaazzzz");
       cy.get('.RCK').click();
   });
   
   it('TM-QA08-291:Delete board',()=>{
       cy.get('.Jea > .qJc > .Pj7 > .XiG > .hCL').click();
-      cy.get('[data-test-id="board-Beautiful makeup"] > .hA- > .Fje > .lH1').click();
+      cy.get('[data-test-id="board-aaaaazzzz"] > .hA- > .Fje > .lH1').click();
       cy.get('.b8T > :nth-child(1) > :nth-child(1) > .zI7 > .rYa > .x8f > .gUZ').click();
       cy.get('[data-test-id="deleteBoardButton"] > .RCK').click();
       cy.get('[data-test-id="confirm-button"] > .RCK').click();

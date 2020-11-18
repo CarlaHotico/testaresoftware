@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "b16fc593-c4c4-4bcc-b208-eaa71e6657c9",
+		"name": "Pinterest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save pin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "98ede9ce-616e-4ce7-9f53-d7068d2b4f35",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"value": "{\"options\":{\"data\":{\"browser\":1,\"clientUUID\":\"d550acd2-7605-492c-9903-eeeaf7318f33\",\"event_type\":7137,\"view_type\":1,\"view_parameter\":92,\"unauth_id\":\"9a42d21f78334b989a7dd0a1e84025ae\",\"appVersion\":\"9f88ffb\",\"auxData\":{\"stage\":\"prod\"}}},\"context\":{}}",
+							"type": "text"
+						},
+						{
+							"key": "source_url",
+							"value": "/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ro.pinterest.com/resource/ActiveUserResource/create/",
+					"protocol": "https",
+					"host": [
+						"ro",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						"resource",
+						"ActiveUserResource",
+						"create",
+						""
+					]
+				},
+				"description": "Status = 200\r\nRequest time less than 400 ms"
+			},
+			"response": []
+		},
+		{
+			"name": "Home page",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "622fe3bd-fc2b-40e1-a176-eea012e6e8d2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ro.pinterest.com/",
+					"protocol": "https",
+					"host": [
+						"ro",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log In",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77ad2a7e-1c47-48e7-83a8-0accfb226ea8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://ro.pinterest.com/resource/ActiveUserResource/create/",
+					"protocol": "https",
+					"host": [
+						"ro",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						"resource",
+						"ActiveUserResource",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5320ed76-3392-4f0a-a68e-917c2c9df47b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://sessions.bugsnag.com/",
+					"protocol": "https",
+					"host": [
+						"sessions",
+						"bugsnag",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View pin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0e1116e5-84c3-4196-a1a8-6ab7cc38d41c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://i.pinimg.com/236x/86/05/14/8605146f1fa83fc8c132e06c52d45b4b.jpg",
+					"protocol": "https",
+					"host": [
+						"i",
+						"pinimg",
+						"com"
+					],
+					"path": [
+						"236x",
+						"86",
+						"05",
+						"14",
+						"8605146f1fa83fc8c132e06c52d45b4b.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c8166a3c-71b2-47c4-8652-13a562e89d06",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://ro.pinterest.com/resource/BoardResource/create/",
+					"protocol": "https",
+					"host": [
+						"ro",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						"resource",
+						"BoardResource",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share pin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2d485ce7-fe2f-423e-be48-2635e58c5e80",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://ro.pinterest.com/resource/CreateExternalInviteResource/create/",
+					"protocol": "https",
+					"host": [
+						"ro",
+						"pinterest",
+						"com"
+					],
+					"path": [
+						"resource",
+						"CreateExternalInviteResource",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

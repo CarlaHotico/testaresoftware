@@ -1,0 +1,277 @@
+{
+	"id": "10e398d8-7e05-4edd-a34a-4dc9f9422515",
+	"name": "Pinterest",
+	"timestamp": "2020-11-18T12:46:06.017Z",
+	"collection_id": "b16fc593-c4c4-4bcc-b208-eaa71e6657c9",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 14,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e232e300-5b18-497d-9435-d255ac787830",
+			"name": "Save pin",
+			"url": "https://ro.pinterest.com/resource/ActiveUserResource/create/",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "3dc7d5cc-009c-4396-acbc-55f9e5d5a05f",
+			"name": "Home page",
+			"url": "https://ro.pinterest.com/",
+			"time": 383,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				383
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "a6c07e37-bdf2-4124-8614-198d3dd73e0a",
+			"name": "Log In",
+			"url": "https://ro.pinterest.com/resource/ActiveUserResource/create/",
+			"time": 224,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				224
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "952fe812-81e3-4315-a7b8-f0114eebcd23",
+			"name": "Search",
+			"url": "https://sessions.bugsnag.com/",
+			"time": 192,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "5fc30161-8c97-485e-afae-cfca822d6a14",
+			"name": "View pin",
+			"url": "https://i.pinimg.com/236x/86/05/14/8605146f1fa83fc8c132e06c52d45b4b.jpg",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "960a185f-effc-4b5a-83f1-d111bfa8b1a1",
+			"name": "Create board",
+			"url": "https://ro.pinterest.com/resource/BoardResource/create/",
+			"time": 195,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				195
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "26026500-fc85-4d14-b61c-e71970d50dbc",
+			"name": "Share pin",
+			"url": "https://ro.pinterest.com/resource/CreateExternalInviteResource/create/",
+			"time": 217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1504,
+	"collection": {
+		"requests": [
+			{
+				"id": "e232e300-5b18-497d-9435-d255ac787830",
+				"method": "POST"
+			},
+			{
+				"id": "3dc7d5cc-009c-4396-acbc-55f9e5d5a05f",
+				"method": "GET"
+			},
+			{
+				"id": "a6c07e37-bdf2-4124-8614-198d3dd73e0a",
+				"method": "POST"
+			},
+			{
+				"id": "952fe812-81e3-4315-a7b8-f0114eebcd23",
+				"method": "OPTIONS"
+			},
+			{
+				"id": "5fc30161-8c97-485e-afae-cfca822d6a14",
+				"method": "GET"
+			},
+			{
+				"id": "960a185f-effc-4b5a-83f1-d111bfa8b1a1",
+				"method": "POST"
+			},
+			{
+				"id": "26026500-fc85-4d14-b61c-e71970d50dbc",
+				"method": "POST"
+			}
+		]
+	}
+}
